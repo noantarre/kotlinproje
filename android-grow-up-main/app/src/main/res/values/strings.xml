@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">LessonsApp</string>
-    <string name="texto">Lorem Ipsum</string>
     <string name="user_name_label">Nome de Usuário</string>
     <string name="user_name_hint">Digite seu nome de usuário</string>
     <string name="password_label">Senha</string>
@@ -8,4 +7,8 @@
     <string name="login_button">Entrar</string>
     <string name="signup_text">Cadastre-se</string>
     <string name="search_hint">Buscar</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">Digite seu email</string>
+    <string name="register_title">Cadastro</string>
+    <string name="register_button">Registrar</string>
 </resources>

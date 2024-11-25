@@ -11,4 +11,17 @@
     <string name="email_hint">Digite seu email</string>
     <string name="register_title">Cadastro</string>
     <string name="register_button">Registrar</string>
+    <string name="artists_section">Artistas</string>
+    <string name="forro_section">Forró</string>
+    <string name="styles_section">Estilos</string>
+    <string name="nineties_section">Anos 90</string>
+    <string name="hits_section">Grandes sucessos</string>
+    <string name="app_logo_description">Logo do aplicativo</string>
+    <string name="search_icon_description">Buscar</string>
+    <string name="clicked_artist">Clicou no artista: %1$s</string>
+    <string name="clicked_song">Clicou na música: %1$s</string>
+    <string name="ichords">ichords</string>
+    <string name="nav_menu_others">Outros</string>
+    <string name="nav_menu_favorites">Favoritos</string>
+    <string name="nav_menu_musics">Músicas</string>
 </resources>

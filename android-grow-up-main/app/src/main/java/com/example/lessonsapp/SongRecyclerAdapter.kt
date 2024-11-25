@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class SongRecyclerAdapter(
     private val context: Context,
-    private val list: List<SongModel>,
+    private var list: List<SongModel>,
     private val onClickListener: (SongModel) -> Unit,
 ) : RecyclerView.Adapter<SongRecyclerAdapter.SongViewHolder>() {
+
+    private val originalList = list.toList()
 
     override fun getItemCount(): Int = list.size
 
@@ -41,12 +43,21 @@ class SongRecyclerAdapter(
             // colocando o titulo do elemento[i] da lista no TextView
             songTitle.text = song.title
 
-            // colocando o artista do elemento[i] da lista no Textview
+            // colocando o artista do elemento[i] da lista no TextView
             songArtist.text = song.artist
 
             itemView.setOnClickListener {
                 onClickListener(song)
             }
         }
+    }
+
+    fun updateList(newList: List<SongModel>) {
+        list = newList
+        notifyDataSetChanged()
+    }
+
+    fun getOriginalList(): List<SongModel> {
+        return originalList
     }
 }

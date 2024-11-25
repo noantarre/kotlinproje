@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Nome de Usuário"
+        android:text="@string/user_name_label"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/ivLogo"
@@ -42,14 +42,17 @@
         android:id="@+id/tilUserField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite seu nome de usuário"
+        android:hint="@string/user_name_hint"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvUserLabel">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietUsername"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="12dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -57,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Senha"
+        android:text="@string/password_label"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tilUserField"
@@ -67,40 +70,46 @@
         android:id="@+id/tilPasswordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite seu nome de usuário"
+        android:hint="@string/password_hint"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPasswordLabel">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"
+            android:padding="12dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar"
+        android:text="@string/login_button"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:background="@drawable/bg_button_login"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/tilPasswordField" />
+        app:layout_constraintTop_toBottomOf="@id/tilPasswordField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSignUp"
+    <Button
+        android:id="@+id/bGoToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Cadastre-se"
+        android:text="@string/signup_text"
         android:textAllCaps="true"
         android:textColor="@color/blue"
         android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/bLogin"
         app:layout_constraintStart_toStartOf="@id/bLogin"
-        app:layout_constraintEnd_toEndOf="@id/bLogin" />
-
+        app:layout_constraintEnd_toEndOf="@id/bLogin"
+        android:background="@android:color/transparent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

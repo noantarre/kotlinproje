@@ -1,0 +1,12 @@
+<resources>
+    <!-- Definir o estilo para a máscara redonda -->
+    <style name="RoundedImageView" parent="">
+        <item name="shapeAppearanceOverlay">@style/RoundedImageViewShapeAppearance</item>
+    </style>
+
+    <!-- Definir a aparência do shape com cantos arredondados -->
+    <style name="RoundedImageViewShapeAppearance" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
